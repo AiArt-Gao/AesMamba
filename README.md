@@ -29,7 +29,7 @@
 ## PIAA
 <img src="assets/PIAA.png" width="400px"/> 
 
-# environment
+# Dependencies and Installation
 requirements:
 - Linux
 - NVIDIA GPU
