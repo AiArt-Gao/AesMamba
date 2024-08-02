@@ -12,7 +12,7 @@
 
 
 ## TODO
-- [x] Add training code and config files
+- [x] Add inference code and config files
 - [x] Add checkpoint and script for IAA task
 
 # Results
@@ -37,6 +37,7 @@ requirements:
 - CUDA 11.6+
 ## our version(advised)
 ```pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117```
+
 ```pip install --upgrade pip setuptools wheel```
 
 ## install mamba
@@ -68,8 +69,9 @@ In our code, we classified the image by its score in each dataset. We uploaded s
 # Pretrain path
 Visual Encoder:vmamba tiny and Text Encoder:bert base
 We use old version of vmamba, the ckpt is here:
-link: https://pan.baidu.com/s/1REVTVD4w20G7lKnIM-Btjg   passward: c1mk
+
+Link: https://pan.baidu.com/s/1REVTVD4w20G7lKnIM-Btjg   Passward: c1mk
 
 
-vmamba base and it's conda environment for ImageNet1k
+Vmamba base and it's conda environment
 please ref https://github.com/MzeroMiko/VMamba

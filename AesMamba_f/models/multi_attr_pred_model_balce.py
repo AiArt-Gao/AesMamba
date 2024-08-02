@@ -13,12 +13,12 @@ class multi_attr_pred_model(nn.Module):
 
         if type == 'vmamba_tiny':
             self.img_feature = VSSM(num_classes=0)
-            d = torch.load('/data/sjq/Aesmamba/Checkpoints/pretrain_model/vmamba_tiny_e292.pth', map_location='cpu')
+            d = torch.load('/data/sjq/IAA_Aesmamba/Checkpoints/pretrain_model/vmamba_tiny_e292.pth', map_location='cpu')
             print(self.img_feature.load_state_dict(d['model'], strict=False))
             self.multi_attr_pred_head = multi_attr_pred_head(768)
 
         elif type == 'vmamba_base':
-            self.img_feature = VSSM(drop_path_rate = 0.,
+            self.img_feature = VSSM(drop_path_rate = 0.6,
                           depths=[ 2, 2, 15, 2 ],
                           ssm_d_state=1,
                           ssm_dt_rank="auto",

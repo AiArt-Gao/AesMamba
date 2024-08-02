@@ -21,7 +21,7 @@ from torch.utils.data import DataLoader
 
 
 opt = option.init()
-opt.save_path = f'/data/sjq/Aesmamba/Exp'
+opt.save_path = f'/data/sjq/Aesmamba/Exp'# change
 if not os.path.exists(opt.save_path):
     os.makedirs(opt.save_path)
 f = open(f'{opt.save_path}/PARA_log_test.txt', 'a')
@@ -30,11 +30,13 @@ opt.lr = 1e-4
 opt.batch_size = 64
 opt.model_type = 'vmamba_tiny'
 
-opt.path_to_save_csv = '/data/sjq/IAAdataset/PARA/annotation/ORI'
+
+
+opt.path_to_save_csv = '/data/sjq/IAAdataset/PARA/annotation/ORI'# change
 opt.path_to_imgs = '/data/sjq/IAAdataset/PARA/imgs'
 
 def create_data_part(opt):
-    train_csv_path = os.path.join(opt.path_to_save_csv, 'PARA-GiaaTrain_w_class.csv')
+    train_csv_path = os.path.join(opt.path_to_save_csv, 'PARA-GiaaTrain_w_class.csv')# change
     test_csv_path = os.path.join(opt.path_to_save_csv, 'PARA-GiaaTest_w_class.csv')
 
     train_data = ParaDataset_for_multi_attr_mse_and_4class(train_csv_path, opt.path_to_imgs, isTrain=True)
@@ -178,9 +180,9 @@ def compute_mae_rmse(target, prediction):
     squaredError = []
     absError = []
     for val in error:
-        squaredError.append(val * val)  # target-prediction之差平方
-        absError.append(abs(val))  # 误差绝对值
-    MAE = sum(absError) / len(absError)  # 平均绝对误差MAE
+        squaredError.append(val * val)  
+        absError.append(abs(val))  
+    MAE = sum(absError) / len(absError)  
     RMSE = math.sqrt(sum(squaredError) / len(absError))
     return MAE, RMSE
 

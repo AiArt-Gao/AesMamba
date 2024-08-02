@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import accuracy_score
 import torch.optim.lr_scheduler as lr_scheduler
-from Aesmamba.AesMamba_m.models.AesMamba import AesMamba_p
+from Aesmamba.AesMamba_m.models import AesMamba_p
 from dataset.AVAdataset import AVA_Comment_Dataset_bert_balce
 from dataset.PHdataset import photonet_Comment_Dataset_bert_balce
 from util import AverageMeter, set_up_seed, EMDLoss, compute_mae_rmse, EDMLoss_r_1
