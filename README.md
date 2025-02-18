@@ -69,7 +69,7 @@ In our code, we classified the image by its score in each dataset. We uploaded s
 
 # citition
 ```
-@inproceedings{10.1145/3664647.3681011,
+@inproceedings{Gao2024AesMamba,
 author = {Gao, Fei and Lin, Yuhao and Shi, Jiaqi and Qiao, Maoying and Wang, Nannan},
 title = {AesMamba: Universal Image Aesthetic Assessment with State Space Models},
 booktitle = {Proceedings of the 32nd ACM International Conference on Multimedia},
