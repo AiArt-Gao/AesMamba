@@ -1,6 +1,6 @@
-## AesMamba: Universal Image Aesthetic Assessment with State Space Models (ACM MM 2024)
+## AesMamba (ACM MM 2024)
 
-
+> Fei Gao\*, Yuhao Lin\*, Jiaqi Shi, Maoying Qiao, Nannan Wang\*\*, AesMamba: Universal Image Aesthetic Assessment with State Space Models, Proceedings of the 32nd ACM International Conference on Multimedia, 7444–7453, 2024.
 
 
 
@@ -65,6 +65,22 @@ requirements:
 You can change the config in their corresponding .py file. We will combine the four tasks in our later works.
 
 In our code, we classified the image by its score in each dataset. We uploaded some of their csv files. As for other datasets, we only provide the method of classification because the csv file is large.
+
+
+# citition
+```
+@inproceedings{10.1145/3664647.3681011,
+author = {Gao, Fei and Lin, Yuhao and Shi, Jiaqi and Qiao, Maoying and Wang, Nannan},
+title = {AesMamba: Universal Image Aesthetic Assessment with State Space Models},
+booktitle = {Proceedings of the 32nd ACM International Conference on Multimedia},
+pages = {7444–7453},
+location = {Melbourne VIC, Australia},
+year = {2024},
+address = {New York, NY, USA},
+series = {MM '24}
+doi = {10.1145/3664647.3681011},
+}
+```
 
 # Pretrain path
 Visual Encoder:vmamba tiny and Text Encoder:bert base
