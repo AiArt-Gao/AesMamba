@@ -77,8 +77,7 @@ pages = {7444–7453},
 location = {Melbourne VIC, Australia},
 year = {2024},
 address = {New York, NY, USA},
-series = {MM '24}
-doi = {10.1145/3664647.3681011},
+doi = {10.1145/3664647.3681011}
 }
 ```
 
